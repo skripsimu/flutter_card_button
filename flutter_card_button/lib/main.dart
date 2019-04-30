@@ -46,7 +46,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
     Widget topAppBar = AppBar(
       elevation: 0.1,
-      backgroundColor: Colors.amber,
+      backgroundColor: Color.fromARGB(200, 20, 20, 20),
       title: Text("Card Button"),
       actions: <Widget>[
         IconButton(
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
     Widget firsCard(){
     return Container(
-      margin: EdgeInsets.only(top: 15.0, left: 5, right: 5),
+      margin: EdgeInsets.only(top: 5.0, left: 5, right: 5),
       child: Column(
         children: <Widget>[
         Row(
@@ -74,14 +74,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       SizedBox(
                         height: 15.0,
                       ),
-                      Image.asset('assets/icon1.png',
+                      Image.asset('assets/car.png',
                       width: 60,
                       height: 60,),
                       SizedBox(
                         height: 5.0,
                       ),
                       Text(
-                        "Lunch",
+                        "Car",
                         style: TextStyle(fontWeight: FontWeight.w600),
                       ),
                     ],
@@ -107,14 +107,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       SizedBox(
                         height: 15.0,
                       ),
-                      Image.asset('assets/icon1.png',
+                      Image.asset('assets/bike.png',
                       width: 60,
                       height: 60,),
                       SizedBox(
                         height: 5.0,
                       ),
                       Text(
-                        "Lunch",
+                        "Bike",
                         style: TextStyle(fontWeight: FontWeight.w600),
                       ),
                     ],
@@ -140,14 +140,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       SizedBox(
                         height: 15.0,
                       ),
-                      Image.asset('assets/icon1.png',
+                      Image.asset('assets/food.png',
                       width: 60,
                       height: 60,),
                       SizedBox(
                         height: 5.0,
                       ),
                       Text(
-                        "Lunch",
+                        "Food",
                         style: TextStyle(fontWeight: FontWeight.w600),
                       ),
                     ],
@@ -178,14 +178,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       SizedBox(
                         height: 15.0,
                       ),
-                      Image.asset('assets/icon1.png',
+                      Image.asset('assets/topup.png',
                       width: 60,
                       height: 60,),
                       SizedBox(
                         height: 5.0,
                       ),
                       Text(
-                        "Lunch",
+                        "Payment",
                         style: TextStyle(fontWeight: FontWeight.w600),
                       ),
                     ],
@@ -211,14 +211,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       SizedBox(
                         height: 15.0,
                       ),
-                      Image.asset('assets/icon1.png',
+                      Image.asset('assets/payment.png',
                       width: 60,
                       height: 60,),
                       SizedBox(
                         height: 5.0,
                       ),
                       Text(
-                        "Lunch",
+                        "Top Up",
                         style: TextStyle(fontWeight: FontWeight.w600),
                       ),
                     ],
@@ -238,20 +238,21 @@ class _MyHomePageState extends State<MyHomePage> {
             width: 115.0,
             child: InkWell(
               child: Card(
+                color: Color.fromARGB(255, 255, 255, 255),
                 child: new InkWell(
                   child: Column(
                     children: <Widget>[
                       SizedBox(
                         height: 15.0,
                       ),
-                      Image.asset('assets/icon1.png',
+                      Image.asset('assets/voucher.png',
                       width: 60,
                       height: 60,),
                       SizedBox(
                         height: 5.0,
                       ),
                       Text(
-                        "Lunch",
+                        "Voucher",
                         style: TextStyle(fontWeight: FontWeight.w600),
                       ),
                     ],
@@ -281,7 +282,7 @@ class _MyHomePageState extends State<MyHomePage> {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Container(
-        color: Colors.amberAccent,
+        color: Color.fromARGB(200, 30, 30, 30),
         child: Column(
           children: <Widget>[
             firsCard()
