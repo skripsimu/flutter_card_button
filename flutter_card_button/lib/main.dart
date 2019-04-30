@@ -55,21 +55,31 @@ class _MyHomePageState extends State<MyHomePage> {
         )
       ],
     );
-    Widget leftCard(){
+    Widget firsCard(){
     return Container(
-      margin: EdgeInsets.only(top: 15.0, left: 10, right: 10),
-      child: Row(
+      margin: EdgeInsets.only(top: 15.0, left: 5, right: 5),
+      child: Column(
+        children: <Widget>[
+        Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            height: 110.0,
-            width: 110.0,
+            height: 115.0,
+            width: 115.0,
             child: InkWell(
               child: Card(
                 child: new InkWell(
                   child: Column(
                     children: <Widget>[
-                      Image.asset('assets/icon1.png'),
+                      SizedBox(
+                        height: 15.0,
+                      ),
+                      Image.asset('assets/icon1.png',
+                      width: 60,
+                      height: 60,),
+                      SizedBox(
+                        height: 5.0,
+                      ),
                       Text(
                         "Lunch",
                         style: TextStyle(fontWeight: FontWeight.w600),
@@ -87,14 +97,22 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ),
           Container(
-            height: 110.0,
-            width: 110.0,
+            height: 115.0,
+            width: 115.0,
             child: InkWell(
               child: Card(
                 child: new InkWell(
                   child: Column(
                     children: <Widget>[
-                      Image.asset('assets/Image/lunch.png'),
+                      SizedBox(
+                        height: 15.0,
+                      ),
+                      Image.asset('assets/icon1.png',
+                      width: 60,
+                      height: 60,),
+                      SizedBox(
+                        height: 5.0,
+                      ),
                       Text(
                         "Lunch",
                         style: TextStyle(fontWeight: FontWeight.w600),
@@ -112,14 +130,22 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ),
           Container(
-            height: 110.0,
-            width: 110.0,
+            height: 115.0,
+            width: 115.0,
             child: InkWell(
               child: Card(
                 child: new InkWell(
                   child: Column(
                     children: <Widget>[
-                      Image.asset('assets/Image/lunch.png'),
+                      SizedBox(
+                        height: 15.0,
+                      ),
+                      Image.asset('assets/icon1.png',
+                      width: 60,
+                      height: 60,),
+                      SizedBox(
+                        height: 5.0,
+                      ),
                       Text(
                         "Lunch",
                         style: TextStyle(fontWeight: FontWeight.w600),
@@ -138,6 +164,112 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
+        Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Container(
+            height: 115.0,
+            width: 115.0,
+            child: InkWell(
+              child: Card(
+                child: new InkWell(
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(
+                        height: 15.0,
+                      ),
+                      Image.asset('assets/icon1.png',
+                      width: 60,
+                      height: 60,),
+                      SizedBox(
+                        height: 5.0,
+                      ),
+                      Text(
+                        "Lunch",
+                        style: TextStyle(fontWeight: FontWeight.w600),
+                      ),
+                    ],
+                  ),
+                  onTap: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Screen()),
+                    // );
+                  },
+                ),
+              ),
+            )
+          ),
+          Container(
+            height: 115.0,
+            width: 115.0,
+            child: InkWell(
+              child: Card(
+                child: new InkWell(
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(
+                        height: 15.0,
+                      ),
+                      Image.asset('assets/icon1.png',
+                      width: 60,
+                      height: 60,),
+                      SizedBox(
+                        height: 5.0,
+                      ),
+                      Text(
+                        "Lunch",
+                        style: TextStyle(fontWeight: FontWeight.w600),
+                      ),
+                    ],
+                  ),
+                  onTap: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Screen()),
+                    // );
+                  },
+                ),
+              ),
+            )
+          ),
+          Container(
+            height: 115.0,
+            width: 115.0,
+            child: InkWell(
+              child: Card(
+                child: new InkWell(
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(
+                        height: 15.0,
+                      ),
+                      Image.asset('assets/icon1.png',
+                      width: 60,
+                      height: 60,),
+                      SizedBox(
+                        height: 5.0,
+                      ),
+                      Text(
+                        "Lunch",
+                        style: TextStyle(fontWeight: FontWeight.w600),
+                      ),
+                    ],
+                  ),
+                  onTap: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => Screen()),
+                    // );
+                  },
+                ),
+              ),
+            )
+          ),
+        ],
+      ),
+        ],
+      )
     );
   }
 
@@ -152,7 +284,7 @@ class _MyHomePageState extends State<MyHomePage> {
         color: Colors.amberAccent,
         child: Column(
           children: <Widget>[
-            leftCard()
+            firsCard()
           ],
         ),
       ),
